@@ -1,0 +1,55 @@
+/* ... Other styles ... */
+
+td,
+th {
+  text-align: left;
+}
+
+.delete {
+  display: flex;
+  align-items: center;
+}
+
+.pagination {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button {
+  border: 2px solid rgb(34, 55, 244);
+  border-radius: 50%;
+  background-color: rgb(34, 55, 244);
+  color: white;
+  padding: 8px 12px;
+  width: 40px; /* Fixed width for a perfect circle */
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination button.active {
+  background-color: white;
+  color: rgb(34, 55, 244);
+}
+
+.pagination button:disabled {
+  background-color: #ccc;
+  border-color: rgb(34, 55, 244);
+  color: rgb(34, 55, 244);
+  cursor: not-allowed;
+}
+
+/* New CSS for selected rows */
+.selected-row {
+  background-color: #f2f2f2;
+}
